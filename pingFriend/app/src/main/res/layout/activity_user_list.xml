@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.vaibhavjain.pingfriend.UserListActivity">
+
+    <TextView android:id="@+id/output"
+        android:background="@color/BrightBlue"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="Click : " android:layout_width="fill_parent" />
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@android:id/list"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="103dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:id="@+id/refreshButton"
+        android:layout_below="@+id/output"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disable Cellular"
+        android:id="@+id/disable_button"
+        android:layout_below="@+id/output"
+        android:onClick="disableCellular"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Auto Mode"
+        android:id="@+id/autoButton"
+        android:layout_below="@+id/disable_button"
+        android:onClick="autoDisEnCellular"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
